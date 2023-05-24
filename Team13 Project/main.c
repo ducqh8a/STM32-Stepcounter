@@ -62,6 +62,7 @@ int main(void) {
 			else {
 				TIM2->CR1 &= ~TIM_CR1_CEN;					// Disable TIM2		
 				GPIOC->BRR |= GPIO_BRR_BR14;					// Turn off the BLUE led
+				GPIOC->BSRR |= GPIO_BSRR_BS15;					// Turn on the RED led
 			}
 		}
 		LCD_setCursor(1,0);								// Print string in column 2, row 1
