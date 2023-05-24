@@ -19,6 +19,6 @@ void TIM2_IRQHandler(void) {
 	/* Check Update interrupt Flag */
   	if ((TIM2->SR & TIM_SR_UIF) != 0) {
 		 GPIOC->ODR ^= GPIO_ODR_ODR14;			// Blink Blue LED	
-     	TIM2->SR &= ~TIM_SR_UIF;				// Reset bit 1 SR Register
-  }
+     		TIM2->SR &= ~TIM_SR_UIF;				// Reset bit 1 SR Register
+  	}
 }
