@@ -7,21 +7,21 @@
 #include "stm32f10x_i2c.h"
 
 #ifndef I2C_TIMEOUT
-#define I2C_TIMEOUT											20000
+#define I2C_TIMEOUT									20000
 #endif
 
 //I2C1 settings, change defines
 #ifndef I2C1_ACKNOWLEDGED_ADDRESS
-#define I2C1_ACKNOWLEDGED_ADDRESS				I2C_AcknowledgedAddress_7bit
+#define I2C1_ACKNOWLEDGED_ADDRESS							I2C_AcknowledgedAddress_7bit
 #endif
 #ifndef I2C1_MODE
-#define I2C1_MODE												I2C_Mode_I2C
+#define I2C1_MODE									I2C_Mode_I2C
 #endif
 #ifndef I2C1_OWN_ADDRESS
 #define I2C1_OWN_ADDRESS								0x00
 #endif
 #ifndef I2C1_ACK
-#define I2C1_ACK												I2C_Ack_Disable
+#define I2C1_ACK									I2C_Ack_Disable
 #endif
 #ifndef I2C1_DUTY_CYCLE
 #define I2C1_DUTY_CYCLE									I2C_DutyCycle_2
@@ -29,26 +29,26 @@
 
 //I2C2 settings, change defines
 #ifndef I2C2_ACKNOWLEDGED_ADDRESS
-#define I2C2_ACKNOWLEDGED_ADDRESS				I2C_AcknowledgedAddress_7bit
+#define I2C2_ACKNOWLEDGED_ADDRESS							I2C_AcknowledgedAddress_7bit
 #endif
 #ifndef I2C2_MODE
-#define I2C2_MODE												I2C_Mode_I2C
+#define I2C2_MODE									I2C_Mode_I2C
 #endif
 #ifndef I2C2_OWN_ADDRESS
 #define I2C2_OWN_ADDRESS								0x00
 #endif
 #ifndef I2C2_ACK
-#define I2C2_ACK												I2C_Ack_Disable
+#define I2C2_ACK									I2C_Ack_Disable
 #endif
 #ifndef I2C2_DUTY_CYCLE
 #define I2C2_DUTY_CYCLE									I2C_DutyCycle_2
 #endif
 
 //I2C speed modes
-#define I2C_CLOCK_STANDARD							100000
-#define I2C_CLOCK_FAST_MODE							400000
-#define I2C_CLOCK_FAST_MODE_PLUS				1000000
-#define I2C_CLOCK_HIGH_SPEED						3400000
+#define I2C_CLOCK_STANDARD								100000
+#define I2C_CLOCK_FAST_MODE								400000
+#define I2C_CLOCK_FAST_MODE_PLUS							1000000
+#define I2C_CLOCK_HIGH_SPEED								3400000
 
 typedef enum {
 	Pin_PB8PB9,
