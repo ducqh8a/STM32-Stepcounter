@@ -1,7 +1,7 @@
 #include "Switch.h"
 /* Init SWITCH Pin*/
 void switch_init(void) {
-	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;				// Enable Port A Clock
 	
 	GPIOA->CRH &= ~(GPIO_CRH_MODE12); 				// Set pin SS to input  
   	GPIOA->CRH &= ~(GPIO_CRH_CNF12);   				// Clear bit 18 and 19 in register CRH
