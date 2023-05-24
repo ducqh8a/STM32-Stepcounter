@@ -10,7 +10,8 @@ Bài tập lớn cuối kỳ - Step Counter using MPU6050 with STM32F103C8T6 (M�
 ## Systems and Engine
 
 - Build with Keil C
-- Using Standard Library
+- Using Standard Library to Init I2C
+- Using Register Programming to program the remaining Systems
 - Using STM32F103C8T6
 - Using MPU6050
 - Using LCD16x2
